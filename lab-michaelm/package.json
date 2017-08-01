@@ -1,0 +1,31 @@
+{
+  "name": "lab-michaelm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "stop-db": "killall mongod",
+    "start-db": "mkdir -p ./db &&  mongod --dbpath ./db",
+    "start": "node index.js",
+    "lint": "eslint ./"
+  },
+  "keywords": [],
+  "author": "mdm_8@hotmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "cors": "^2.8.3",
+    "expect": "^1.20.2",
+    "mocha": "^3.4.2",
+    "morgan": "^1.8.2",
+    "superagent": "^3.5.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "dotenv": "^4.0.0",
+    "express": "^4.15.3",
+    "faker": "^4.1.0",
+    "http-errors": "^1.6.1",
+    "mongoose": "^4.11.0"
+  }
+}
